@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+    <title>横向导航栏</title>
+    <link rel="stylesheet" href="css.css" type="text/css" />
+
+    <style>
+        @charset "GBK";
+
+        /* CSS Document */
+        #top {
+            width: 980px;
+            height: 119px;
+            margin: 0px auto;
+            background-image: url(images/book_02.gif);
+        }
+
+        .nav ul {
+            width: 980px;
+            margin: 0px auto;
+            height: 38px;
+            padding: 0;
+            background-image: url(images/book_04.gif);
+        }
+
+        .nav ul li {
+            float: left;
+            list-style-type: none;
+        }
+
+        .nav ul span {
+            float: right;
+        }
+
+        .nav ul li a {
+            margin: 5px 40px;
+            font-size: 24px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .nav ul li a:hover {
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top"></div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+
+            <li><a href="#">添加</a></li>
+
+            <li><a href="#">管理</a></li>
+            <span>
+                <li><a href="#">导航4</a></li>
+
+                <li><a href="#">导航5</a></li>
+
+                <li><a href="#">导航6</a></li>
+            </span>
+        </ul>
+    </div>
+    <div>
+        <a href="http://www.zcmu.edu.cn/">学校主页</a>
+    </div>
+</body>
+
+</html>
