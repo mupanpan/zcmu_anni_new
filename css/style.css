@@ -586,6 +586,54 @@ img {
   width: 40%;
 }
 
+.modal-content label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.modal-content input[type=text], textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size:16px;
+  font-family: 黑体;
+}
+
+.modal-content input[type=submit] {
+  background-color: white;
+  color: red;
+  padding: 12px 20px;
+  border-color: red;
+  border-radius: 15px;
+  cursor: pointer;
+  float: right;
+  width:120px;
+  height:40px;
+  font-size:16px;
+  font-family: 黑体;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* The Close Button */
 .close {
   color: #aaaaaa;

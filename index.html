@@ -308,15 +308,41 @@
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <form>
-                        署名:
-                        <input type="text" name="firstname"><br>
-                        届数:
-                        <input type="text" name="lastname"><br>
-                        院系:
-                        <input type="text" name="lastname"><br>
-                        祝福：
-                        <textarea></textarea><br>
-                        <input type="submit" value="提交">
+                        <div class="row">
+                            <div class="col-25">
+                                <label style="padding-top:45px">署名:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="您的姓名">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label>届数:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="您是那一届的学生">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label>院系:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="您所在的院系">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label>祝福:</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="comment" name="comment" placeholder="祝愿母校..." style="height:200px"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="提交">
+                        </div>
                     </form>
 
                 </div>
