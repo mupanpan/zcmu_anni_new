@@ -8,25 +8,35 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+
+
     <div id="topAnchor"></div>
     <div class="header">
-        <div class="toplink-a"><img src="images/校庆标志.png" /></div>
-        <div class="toplink-b">
+        <!-- <div class="toplink-a"></div> -->
+        <div class="toplink">
             <ul>
-                <li><img src="images/我要捐赠.png" width="100px" /></li>
-                <li><img src="images/留言祝福.png" width="100px" /></li>
-                <li><a href="http://www.zcmu.edu.cn/">学校主页</a></li>
-                <li>
-                    <a href="https://weibo.com/u/2821679562?sudaref=www.google.com.sg&display=0&retcode=6102&is_hot=1"><img
-                            src="images/微博.png" /></a>
-                </li>
-                <li><img src="images/微信.png" /></li>
+                <li><img src="images/校庆标志.png" width="300px" /></li>
+                <span>
+                    <li><a onmouseover="overwb()" onmouseout="outwb()"><i class="iconfont icon-weibo"></i><img id="wb"
+                                style="display:none" src="images/官方微博.png"></a></li>
+                    <li>
+                        <a onmouseover="overwx()" onmouseout="outwx()"><i class="iconfont icon-weixin"></i><img id="wx"
+                                style="display:none" src="images/官方微信.jpg"></a>
+                    </li>
+                    <li><input type="button" value="学校主页" onclick="window.open('http://www.zcmu.edu.cn');" /></li>
+                    <li><input type="button" value="留言祝福" onclick="document.getElementById('liuyan').scrollIntoView();" /></li>
+                    <li><input type="button" value="我要捐赠" onclick="window.open('http://xyh.zcmu.edu.cn/jsps/alumni_front/front_donate/want-juan-zeng.html');" /></li>
+                </span>
             </ul>
         </div>
         <div>
+            <!-- <div>
+                <img id="xscl" src="images/校史长廊.png" />
+            </div> -->
             <div id="loopDiv">
                 <img class="autoscale" id="pic" src="images/0.png" />
                 <ul id="list">
@@ -61,7 +71,10 @@
                 </li>
             </ul>
         </div>
-        <div class="imglist2">
+        <div>
+            <img id="xscl" src="images/校史长廊.png" />
+        </div>
+        <!-- <div class="imglist2">
             <ul>
                 <li>
                     <img src="images/1953.png" title="学校创始于1953年6月，时名为浙江省中医进修学校" />
@@ -87,7 +100,7 @@
                 <li><img src="images/2018.png" /></li>
                 <li><img src="images/2019.png" /></li>
             </ul>
-        </div>
+        </div> -->
     </div>
 
     <a class="back" href="#topAnchor">
