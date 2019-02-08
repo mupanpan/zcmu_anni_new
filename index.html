@@ -9,6 +9,8 @@
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/iconfont.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.SuperSlide.2.1.3.js"></script>
 </head>
 
 <body>
@@ -253,16 +255,19 @@
             <h2>校友捐赠</h2>
         </div>
         <div id="juankuanscroll" style="position:absolute;left: 10%;margin-top:50px">
-            <ul id="con1" onMouseOut="Up()" onMouseOver="Stop()">
-                <li>感谢海外校友会捐款67568元</li>
-                <li>感谢广东校友会捐款40000元</li>
-                <li>感谢江苏校友会捐款40000元</li>
-                <li>感谢青岛校友会捐款40000元</li>
-                <li>感谢福建校友会捐款40000元</li>
-                <li>感谢上海校友会捐款40000元</li>
-                <li>感谢北京校友会捐款40000元</li>
-                <li>感谢湖南校友会捐款40000元</li>
-            </ul>
+            <div class="bd">
+                <ul id="con1">
+                    <li>感谢海外校友会捐款67568元</li>
+                    <li>感谢广东校友会捐款40000元</li>
+                    <li>感谢江苏校友会捐款40000元</li>
+                    <li>感谢青岛校友会捐款40000元</li>
+                    <li>感谢福建校友会捐款40000元</li>
+                    <li>感谢上海校友会捐款40000元</li>
+                    <li>感谢北京校友会捐款40000元</li>
+                    <li>感谢湖南校友会捐款40000元</li>
+                </ul>
+            </div>
+
             <ul id="con2"></ul>
         </div>
         <div style="position:absolute;right:48%;z-index: 10;">
@@ -286,13 +291,22 @@
         <div class="img"><img src="images/留言祝福左2.jpg" /></div>
         <div style="margin-top:50px;margin-bottom: 0;">
             <div id="zhufuscroll">
-                <ul>
-                    <li>王丽倩：祝母校六十华诞快乐！</li>
-                    <li>李亮城：一甲子的风风雨雨，祝母校再创辉煌</li>
-                    <li>
-                        王宇浩：感恩母校多年的培养，感恩老师们的谆谆教导，忠心祝福母校中医药教育事业蒸蒸日上，再创辉煌！
-                    </li>
-                </ul>
+                <div class="bd">
+                    <ul id="con3">
+                        <li>王丽倩：祝母校六十华诞快乐！</li>
+                        <li>李亮城：祝母校再创辉煌</li>
+                        <li>王宇浩：感恩母校多年的培养</li>
+                        <li>王宇浩：感恩母校多年的培养</li>
+                        <li>王宇浩：感恩母校多年的培养</li>
+                        <li>王宇浩：感恩母校多年的培养</li>
+                        <li>王宇浩：感恩母校多年的培养</li>
+                        <li>王宇浩：感恩母校多年的培养</li>
+                        <li>王宇浩：感恩母校多年的培养</li>
+                        <li>王丽倩：祝母校六十华诞快乐！</li>
+                        <li>李亮城：祝母校再创辉煌</li>
+                        <li>王宇浩：感恩母校多年的培养</li>
+                    </ul>
+                </div>
             </div>
             <div>
                 <image id="zhufu" src="images/祝福母校.png" />
@@ -416,26 +430,10 @@
         }
     </script>
     <script>
-
-        var box = document.getElementById("juankuanscroll");
-        var con1 = document.getElementById("con1");
-        var con2 = document.getElementById("con2");
-        var speed = 50;
-        con2.innerHTML = con1.innerHTML;
-        function ScrollUp() {
-            if (box.scrollTop >= con1.scrollHeight) {
-                box.scrollTop = 0;
-            } else
-                box.scrollTop++;
-        }
-        var i = setInterval("ScrollUp()", speed);
-        function Stop() {
-            clearInterval(i);
-        }
-        function Up() {
-            i = setInterval("ScrollUp()", speed);
-        }
+        jQuery("#juankuanscroll").slide({ mainCell: ".bd ul", autoPlay: true, effect: "topMarquee", vis: 7, interTime: 50 });
+        jQuery("#zhufuscroll").slide({ mainCell: ".bd ul", autoPlay: true, effect: "topMarquee", vis: 5, interTime: 50 });
     </script>
+
 </body>
 
 </html>
