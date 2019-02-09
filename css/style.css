@@ -477,12 +477,12 @@ img {
     margin: auto;
     box-shadow: 3px 3px 10px #666666;
     display: flex;
-    justify-content: space-between;
     max-width: 1400px;
     min-width: 1200px;
 }
 
 .box-3 ul {
+    width: 100%;
     padding-left: 40px;
     list-style: none;
 }
@@ -493,7 +493,7 @@ img {
 }
 
 .box-3 .img {
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 50px;
     margin-bottom: 25px;
 }
@@ -504,7 +504,7 @@ img {
 }
 
 .box-3 .img img:hover {
-    transform: scale(1.2);
+    transform: scale(1.01);
 }
 
 .imglist2 {
@@ -654,11 +654,11 @@ textarea {
 
 #zhufu {
     width: 300px;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 #zhufu:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 #juankuanscroll {
@@ -683,8 +683,8 @@ textarea {
 }
 
 #zhufuscroll {
-    width: 300px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     overflow: auto;
     overflow-y: hidden;
@@ -972,4 +972,80 @@ textarea {
 
 .hide {
     display: none !important;
+}
+
+.picScroll-left {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.picScroll-left .bd {
+    padding: 10px;
+}
+.picScroll-left .bd ul {
+    overflow: hidden;
+    zoom: 1;
+}
+.picScroll-left .bd ul li {
+    margin: 0 10px;
+    float: left;
+    _display: inline;
+    overflow: hidden;
+    text-align: center;
+}
+.picScroll-left .bd ul li .pic {
+    text-align: center;
+}
+.picScroll-left .bd ul li .pic img {
+    width: 225px;
+    height: 301px;
+    display: block;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+.picScroll-left .bd ul li .pic a:hover img {
+    border-color: #999;
+}
+.picScroll-left .bd ul li .title {
+    line-height: 24px;
+}
+
+.picMarquee-left {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.picMarquee-left .bd {
+    padding: 10px;
+}
+.picMarquee-left .bd ul {
+    overflow: hidden;
+    zoom: 1;
+}
+.picMarquee-left .bd ul li {
+    margin: 0 8px;
+    float: left;
+    _display: inline;
+    overflow: hidden;
+    text-align: center;
+}
+.picMarquee-left .bd ul li .pic {
+    text-align: center;
+}
+.picMarquee-left .bd ul li .pic img {
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+.picMarquee-left .bd ul li .pic a:hover img {
+    border-color: #999;
+}
+.picMarquee-left .bd ul li .title {
+    line-height: 24px;
 }
