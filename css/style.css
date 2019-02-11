@@ -126,7 +126,7 @@ body {
     transform: scale(1.2);
 }
 
-.imglist {
+/* .imglist {
     width: 80%;
     margin: auto;
     height: auto;
@@ -152,7 +152,7 @@ body {
 
 .imglist ul li img:hover {
     transform: scale(1.2);
-}
+} */
 
 img .on {
     transform: scale(1.2);
@@ -507,7 +507,7 @@ img {
     transform: scale(1.01);
 }
 
-.imglist2 {
+/* .imglist2 {
     position: relative;
     width: 80%;
     margin-left: 10%;
@@ -537,7 +537,7 @@ img {
 
 .imglist2 ul li img:hover {
     transform: scale(2);
-}
+} */
 
 .box-3 h2 {
     position: relative;
@@ -550,7 +550,7 @@ img {
     width: 100px;
 }
 
-.hoverinfo {
+/* .hoverinfo {
     font-size: 28px;
     color: #ffffff;
     cursor: pointer;
@@ -562,7 +562,7 @@ img {
 .hoverinfo:hover p {
     background-color: rgba(255, 255, 255, 0.7);
     display: inline;
-}
+} */
 
 /* The Modal (background) */
 .modal {
@@ -912,14 +912,14 @@ textarea {
     line-height: 72px;
     position: relative;
 }
-.more {
+/* .more {
     width: 6%;
     height: 100%;
     background: url("../img/more.png") no-repeat;
     position: absolute;
     bottom: -2px;
     right: -2px;
-}
+} */
 .dynamicMain .hd div {
     width: 11%;
     margin: 22px auto;

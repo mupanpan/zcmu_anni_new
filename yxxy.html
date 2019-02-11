@@ -107,27 +107,27 @@
                         <a href="index.html"><img src="images/首页1.png"/></a>
                     </li>
                     <li>
-                        <a href="通知公告.html"
+                        <a href="tzgg.html"
                             ><img src="images/通知公告1.png"
                         /></a>
                     </li>
                     <li>
-                        <a href="校庆动态.html"
+                        <a href="xqdt.html"
                             ><img src="images/校庆动态1.png"
                         /></a>
                     </li>
                     <li>
-                        <a href="留声岁月.html"
+                        <a href="lssy.html"
                             ><img src="images/留声岁月1.png"
                         /></a>
                     </li>
                     <li>
-                        <a href="影像校园.html"
+                        <a href="yxxy.html"
                             ><img src="images/影像校园1.png"
                         /></a>
                     </li>
                     <li>
-                        <a href="校友风采.html"
+                        <a href="xyfc.html"
                             ><img src="images/校友风采1.png"
                         /></a>
                     </li>
@@ -145,22 +145,19 @@
 
         <div class="box-1">
             <div class="header-2">
-                <h2>通知公告</h2>
-                <p>当前位置：通知公告</p>
+                <h2>影像校园</h2>
+                <p>当前位置：影像校园</p>
             </div>
 
-            <div>
-                <ul>
-                    <li>
-                        关于举办以“我爱我的校”为主题的浙江中医药大学60周年校庆微视频大赛的通知
-                    </li>
-                    <li>
-                        浙江中医药大学关于征集60周年校庆标识（logo）和宣传标语的通知
-                    </li>
-                    <li>
-                        浙江中医药大学校庆、招生宣传片拍摄服务项目单——来源公告
-                    </li>
-                </ul>
+            <div class="mediacase">
+                <div class="nested">
+                    <div><img src="images/影像校园1.jpg" /></div>
+                    <div><img src="images/影像校园2.jpg" /></div>
+                    <div><img src="images/影像校园3.jpg" /></div>
+                </div>
+                <div>
+                    <img style="width:1150px" src="images/影像校园-视频.png" />
+                </div>
             </div>
         </div>
 
@@ -185,6 +182,53 @@
                 <p><span>官方App</span></p>
             </div>
         </div>
+        <script>
+            function overwb() {
+                img = document.getElementById("wb");
+                img.style.display = "block";
+            }
+
+            function outwb() {
+                img = document.getElementById("wb");
+                img.style.display = "none";
+            }
+            function overwx() {
+                img = document.getElementById("wx");
+                img.style.display = "block";
+            }
+
+            function outwx() {
+                img = document.getElementById("wx");
+                img.style.display = "none";
+            }
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("zhufu");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal
+            btn.onclick = function() {
+                modal.style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            };
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            };
+        </script>
         <script>
             jQuery(".slideBox").slide({
                 mainCell: ".bd ul",
